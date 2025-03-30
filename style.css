@@ -6,7 +6,7 @@
   }
   
   body {
-    /* font-family: Arial, sans-serif; */
+    font-family: Arial, sans-serif;
     line-height: 1.6;
     color: #333;
   }
@@ -19,15 +19,22 @@
   
   /* Hero Section */
   .hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('background.jpg') center/cover no-repeat;
+    /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('background.jpg') center/cover no-repeat; */
+    background-image: url(hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     color: white;
     text-align: center;
-    padding: 100px 20px;
+    padding: 20px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
   }
-  
+
   .hero h1 {
     font-size: 3rem;
     margin-bottom: 10px;
+    /* transition: 3s ease-in; */
   }
   
   .hero p {
@@ -37,7 +44,8 @@
   
   .cta-button {
     display: inline-block;
-    background: #ff6f61;
+    /* background: #ff6f61; */
+    background: crimson;
     color: white;
     padding: 10px 20px;
     text-decoration: none;
@@ -46,13 +54,15 @@
   }
   
   .cta-button:hover {
-    background: #e53935;
+    /* background: #e53935; */
+    background: rgba(220, 20, 60, 0.651);
   }
   
   /* Features Section */
   .features {
     padding: 50px 0;
     text-align: center;
+    margin-top: 50px;
   }
   
   .features h2 {
@@ -82,13 +92,49 @@
     font-size: 1rem;
     color: #666;
   }
+  /* Authors */
+  .authors{
+    margin-bottom: 50px;
+    margin-top: 50px;
+    /* height: 100vh; */
+  }
   
+  .authors .container h1{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  .authors .container .author-container{
+    text-align: center;
+  }
+  .author-container {
+    display: flex;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+  .authors .container .author-container img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;    /* Only one border-radius */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+ .authors .container .author-container h2{
+  font-size: 1.2rem;
+  line-height: 1.3rem;
+  font-weight: 300;   
+    }
+  /* Authors */
+
   /* Call to Action */
   .cta {
     background: #ff6f61;
     color: white;
     text-align: center;
-    padding: 50px 20px;
+    /* padding: 50px 20px; */
+    padding: 70px 20px 50px;
   }
   
   .cta h2 {
