@@ -7,16 +7,29 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Navigation -->
+  <nav class="nav-bar">
+    <div class="container">
+      <ul>
+        <li class="logo"><a href="#hero"><img src="/images/publishing-2.jpg" alt="Write Together Logo"></a></li>
+        <li><a href="#features"><button>Features</button></a></li>
+        <li><a href="#how-it-works"><button>Guidelines</button></a></li>
+        <li><a href="#authors"><button>Authors</button></a></li>
+        <li><a href="#services"><button>Services</button></a></li>
+        <li><a href="#cta"><button>Our Community</button></a></li>
+      </ul>
+    </div>
+  </nav>
+
   <!-- Hero Section -->
-  <header class="hero">
+  <header class="hero" id="hero">
     <div class="container">
       <h1>Write Together</h1>
       <p>A collaborative platform connecting authors and aspiring writers.</p>
       <a href="#features" class="cta-button">Learn More</a>
     </div>
   </header>
-<!-- Hero Section -->
- 
+
   <!-- Features Section -->
   <section id="features" class="features">
     <div class="container">
@@ -37,42 +50,88 @@
       </div>
     </div>
   </section>
-<!-- Features Section -->
 
- <!-- Author Section -->
-  <section id="authors" class="authors">
+  <!-- How It Works Section -->
+  <section id="how-it-works" class="how-it-works">
     <div class="container">
-      <h1>Collaborate with seasoned authors</h1>
-      <div class="author-container">
-        <div class="first">
-          <h2 class="author-name">Brandon Sanderson</h2>
-          <img src="/authors/sanderson.jpg" alt="">
-          <h2>"Life before death. Strength before weakness. Journey before destination."</h2>
+      <h2>How Write Together Works</h2>
+      <p class="subtitle">Unlock your writing potential through collaboration and mentorship.</p>
+      <div class="steps-grid">
+        <div class="step">
+          <span class="step-number">1</span>
+          <h3>Connect</h3>
+          <p>Join a community of writers and mentors to share ideas and inspiration.</p>
         </div>
-
-        <div class="second">
-          <h2 class="author-name">Joe Abercrombie</h2>
-          <img src="./authors/abercrombie.jpg" alt="">
-          <h2>"Once you've got a task to do, it's better to do it than live with the fear of it."</h2>
+        <div class="step">
+          <span class="step-number">2</span>
+          <h3>Collaborate</h3>
+          <p>Work together in real-time, get feedback, and refine your story.</p>
         </div>
-
-        <div class="third">
-          <h2 class="author-name">George R.R Martin</h2>
-          <img src="/authors/george r.r martin.jpg" alt="">
-          <h2>"A mind needs books as a sword needs a whetstone, if it is to keep its edge."</h2>
-        </div>
-
-        <div class="fourth">
-          <h2 class="author-name">Christopher Paolini</h2>
-          <img src="/authors/paolini.jpg" alt="">
-          <h2>"Books are my friends, my companions. They make me laugh and cry and find meaning in life."</h2>
+        <div class="step">
+          <span class="step-number">3</span>
+          <h3>Succeed</h3>
+          <p>Polish your manuscript and achieve your publishing goals with expert guidance.</p>
         </div>
       </div>
     </div>
   </section>
-  <!-- Author Section -->
+
+  <!-- Authors Section -->
+  <section id="authors" class="authors">
+    <div class="container">
+      <h1>Meet Our Authors</h1>
+      <div class="author-container">
+        <div class="author-card">
+          <img src="/authors/sanderson.jpg" alt="Brandon Sanderson">
+          <h2 class="author-name">Brandon Sanderson</h2>
+          <blockquote>"Life before death. Strength before weakness. Journey before destination."</blockquote>
+        </div>
+        <div class="author-card">
+          <img src="/authors/abercrombie.jpg" alt="Joe Abercrombie">
+          <h2 class="author-name">Joe Abercrombie</h2>
+          <blockquote>"Once you've got a task to do, it's better to do it than live with the fear of it."</blockquote>
+        </div>
+        <div class="author-card">
+          <img src="/authors/george r.r martin.jpg" alt="George R.R Martin">
+          <h2 class="author-name">George R.R Martin</h2>
+          <blockquote>"A mind needs books as a sword needs a whetstone, if it is to keep its edge."</blockquote>
+        </div>
+        <div class="author-card">
+          <img src="/authors/paolini.jpg" alt="Christopher Paolini">
+          <h2 class="author-name">Christopher Paolini</h2>
+          <blockquote>"Books are my friends, my companions. They make me laugh and cry and find meaning in life."</blockquote>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services">
+    <div class="container">
+      <h1>Our Services</h1>
+      <div class="service-container">
+        <div class="service-card">
+          <img src="/images/publishing-5.jpg" alt="Collaboration with experienced authors">
+          <h2>Collaborate with Experienced Authors</h2>
+        </div>
+        <div class="service-card">
+          <img src="/images/publishing-2.jpg" alt="Nurturing upcoming authors">
+          <h2>Nurturing Upcoming Authors</h2>
+        </div>
+        <div class="service-card">
+          <img src="/images/publishing-3.jpg" alt="Set and review tasks">
+          <h2>Set and Review Tasks</h2>
+        </div>
+        <div class="service-card">
+          <img src="/images/publishing-4.jpg" alt="Achieve your goals">
+          <h2>Achieve Your Goals</h2>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Call to Action -->
-  <footer class="cta">
+  <footer class="cta" id="cta">
     <div class="container">
       <h2>Join Our Community Today!</h2>
       <p>Start collaborating and refining your work with Write Together.</p>
