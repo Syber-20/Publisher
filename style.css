@@ -25,7 +25,8 @@ body {
 .nav-bar {
   position: sticky;
   top: 0;
-  background: #fff;
+  /* background: #fff; */
+  background-color: #333;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 10px 0;
   z-index: 1000; /* Ensure nav stays above other content */
@@ -63,6 +64,57 @@ body {
 
 .nav-bar button:hover {
   background: #e53935;
+}
+
+/* Dropdown Styles */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-btn {
+  background: #ff6f61;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.dropdown-btn:hover {
+  background: #e53935;
+}
+
+.dropdown-content {
+  display: none; /* Hidden by default */
+  position: absolute;
+  top: 100%; /* Position below the button */
+  left: 0;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  min-width: 150px;
+  z-index: 1001; /* Ensure dropdown is above other elements */
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 10px 15px;
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background 0.3s;
+  background-color: #333;
+}
+
+.dropdown-content a:hover {
+  background: #f1f1f1;
+  background-color: #e53935;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 /* Offset for Sections to Account for Sticky Nav */
@@ -111,7 +163,7 @@ section, header, footer {
 .features {
   padding: 80px 0; /* Increased padding for better separation */
   text-align: center;
-  margin: 30px 0px 30px 0px;
+  margin: 50px 0px 50px 0px;
 }
 
 .features h2 {
@@ -239,7 +291,9 @@ section, header, footer {
   background-size: cover;
   color: white;
   text-align: center;
-  padding: 80px 20px; /* Increased padding */
+  padding: 0px 20px; /* Increased padding */
+  min-height: 80vh; /* Ensure the footer is tall enough to show the background image */
+  z-index: 2; /* Higher z-index to ensure it stays above other sections */
 }
 
 .cta h2 {
